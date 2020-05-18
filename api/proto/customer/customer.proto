@@ -1,0 +1,51 @@
+syntax="proto3";
+
+package customer;
+option go_package=".;customer";
+
+
+message Customer {
+    int64 customerID = 1;
+    string customerFirstName = 2;
+    string customerSecondName = 3;
+    string customerEmail = 4;
+    string customerPhoneNumberPrefix = 5;
+    string customerPhoneNumber = 6;
+    string createdAt = 7;
+}
+
+message CreateCustomerRequest {
+    string customerFirstName = 1;
+    string customerSecondName = 2;
+    string customerEmail = 3;
+    string customerPhoneNumberPrefix = 4;
+    string customerPhoneNumber = 5;
+    string customerPassword = 6;
+}
+
+message CreateCustomerResponse {
+    Customer customer = 1;
+}
+
+message CheckCustomerPasswordRequest {
+    string email = 1;
+    string password = 2;
+}
+
+message CheckCustomerPasswordResponse {
+    bool valid = 1;
+}
+
+message GetCustomerByEmailRequest {
+    string email = 1;
+}
+
+message GetCustomerByEmailResponse {
+    Customer customer = 1;
+}
+
+service CustomerService {
+    rpc CreateCustomer(CreateCustomerRequest) returns (CreateCustomerResponse) {}
+    rpc GetCustomerByEmail(GetCustomerByEmailRequest) returns (GetCustomerByEmailResponse) {}
+    rpc CheckCustomerPassword(CheckCustomerPasswordRequest) returns (CheckCustomerPasswordResponse) {}
+}
