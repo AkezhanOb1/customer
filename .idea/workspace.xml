@@ -2,32 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7f6a3e4-5030-4e4c-97db-fa87f30c9d26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/graphql/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/proto/auth/codeGen.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/proto/customer/codeGen.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/proto/customer/customer.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/checkOwnerPassword.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/createCustomer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/generateToken.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/getCustomerByEmail.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/retriveTokenInformation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/serialize.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/createCustomer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/getCustomerByEmail.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/getCustomerPassword.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/checkCustomerPassword.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/createCustomer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/getCustomerByEmail.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/helper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/serverConfig.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/customer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/customer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/graphql/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/graphql/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/graphql/gqlgen.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/graphql/graph/generated/generated.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/graphql/graph/model/models_gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/graphql/graph/resolver.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/graphql/graph/schema.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/graphql/graph/schema.resolvers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/api/proto/customer" />
       <recent name="$PROJECT_DIR$/api/proto" />
     </key>
