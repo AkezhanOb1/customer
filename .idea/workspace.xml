@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7f6a3e4-5030-4e4c-97db-fa87f30c9d26" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/graphql/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/graphql/client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/graphql/gqlgen.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/graphql/graph/generated/generated.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/graphql/graph/model/models_gen.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/graphql/graph/resolver.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/graphql/graph/schema.graphqls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/graphql/graph/schema.resolvers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
