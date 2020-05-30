@@ -1,13 +1,21 @@
+language: go
+go:
+- 1.13
+branches:
+  only:
+  - master
+
+
 sudo: required
 
 services:
   - docker
 
-#before_install:
+  #before_install:
   #- docker build -t akezhanob1/customer-service .
 
-#script:
- # - docker run -d --restart=always -p 50055:50055 akezhanob1/customer-service
+  #script:
+  # - docker run -d --restart=always -p 50055:50055 akezhanob1/customer-service
 
 after_success:
   - docker build -t akezhanob1/customer-service .
