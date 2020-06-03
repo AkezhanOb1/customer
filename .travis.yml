@@ -11,11 +11,6 @@ sudo: required
 services:
   - docker
 
-  #before_install:
-  #- docker build -t akezhanob1/customer-service .
-
-  #script:
-  # - docker run -d --restart=always -p 50055:50055 akezhanob1/customer-service
 
 after_success:
   - docker build -t akezhanob1/customer-service .
@@ -24,10 +19,11 @@ after_success:
 
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "customer-service"
-  env: "CustomerService-env-1"
+  env: "CustomerService-env-2"
   bucket_name: "elasticbeanstalk-us-east-2-948680101733"
   bucket_path:  "customer-service"
   on:
