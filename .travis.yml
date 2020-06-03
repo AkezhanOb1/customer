@@ -19,11 +19,10 @@ after_success:
 
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
-  access_key_id:
-    secure: "$AWS_ACCESS_KEY"
-    secret_access_key:
-      secure: "$AWS_ACCESS_SECRET"
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_ACCESS_SECRET"
   region: "us-east-2"
   app: "customer-service"
   env: "CustomerService-env-2"
