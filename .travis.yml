@@ -21,3 +21,17 @@ after_success:
   - docker build -t akezhanob1/customer-service .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push akezhanob1/customer-service
+
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "customer-service"
+  env: "CustomerService-env-1"
+  bucket_name: "elasticbeanstalk-us-east-2-948680101733"
+  bucket_path:  "customer-service"
+  on:
+    branch: master
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: "$AWS_ACCESS_SECRET"
