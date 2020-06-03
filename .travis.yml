@@ -19,7 +19,8 @@ after_success:
 
 
 deploy:
-
+  - echo "$AWS_ACCESS_KEY"
+  - echo "$AWS_ACCESS_SECRET"
   edge: true
   provider: elasticbeanstalk
   access_key_id: "$AWS_ACCESS_KEY"
