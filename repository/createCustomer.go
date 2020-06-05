@@ -11,6 +11,7 @@ import (
 	"time"
 )
 
+//CreateCustomerRepository is
 func CreateCustomerRepository(ctx context.Context, request *pb.CreateCustomerRequest) (*pb.CreateCustomerResponse, error) {
 	conn, err := pgx.Connect(ctx, config.PostgresConnection)
 	if err != nil {
