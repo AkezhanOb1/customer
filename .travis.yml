@@ -11,16 +11,13 @@ sudo: required
 services:
   - docker
 
-
 after_success:
   - docker build -t akezhanob1/customer-service .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push akezhanob1/customer-service
 
-
 deploy:
   provider: elasticbeanstalk
-  edge: true
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_ACCESS_SECRET"
   region: "us-east-2"
